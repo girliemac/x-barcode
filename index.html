@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>&lt;x-barcode&gt;</title>
+
+	<!-- Importing Web Component's Polyfill -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+
+	<!-- Importing Custom Elements -->
+	<link rel="import" href="src/x-barcode.html">
+	
+	<style>
+	body {
+	    font-family: "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	}
+	x-barcode {
+		margin-bottom: 1em;
+	    display: block;
+	    background: #fff;
+	    padding: 5px;
+	}
+	pre {
+		background: #fcfcfc;
+		border-radius: 4px;
+		padding: 1em;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		color: #000080;
+	}
+	.na {color: #008080}
+	.s {color:#D14}
+	</style>
+</head>
+<body>
+
+	<h1>&lt;x-barcode&gt;</h1>
+	<p>Web components to create a UPC-A barcode in SVG</p>
+	
+	<!-- Using Custom Elements -->
+	<x-barcode code="02310010517"></x-barcode>
+	
+	<x-barcode code="85961200100" color="hotpink"></x-barcode>
+	
+	<x-barcode code="01657112127" color="olive"></x-barcode>
+	
+	
+	<pre>
+&lt;x-barcode <span class="na">code=</span><span class="s">"02310010517"</span> <span class="na">color=</span><span class="s">"chocolate"</span>&gt;&lt;/x-barcode&gt;
+	</pre>
+	
+	<p>Note: The UPC-A code has to be the first 11 digit. The 12th digit ("Check digit") will be calculated and automatically added.</p>
+	
+
+</body>
+</html>
