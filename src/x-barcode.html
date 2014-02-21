@@ -91,7 +91,7 @@
 				var x = start;
 				for(var i=0; i<s.length; i++){
 					var w = parseInt(s.charAt(i));
-					var h = ((i>=0 && i<10)||(i>44 && i<50) || (i>84 && i<93)) ? heightTall : heightShort;
+					var h = ((i>=0 && i<10)||(i>44 && i<50) || (i>84 && i<95)) ? heightTall : heightShort;
 					if(w !== 0) {
 						barcode += '<rect x="'+x+'" y="0" width="'+stroke * w+'" height="'+h+'" />';
 					}
@@ -106,10 +106,10 @@
 					checkDigit = d.substr(11,1);
 					
 				barcode += '<g style="font-family:Arial, san-serif; font-size:20px; letter-spacing:2px; stroke:none; fill:'+this.color+';">';	
-				barcode += '<text x="7.5" y="77.271" text-anchor="middle">'+numSys+'</text>';
-				barcode += '<text x="69.5" y="77.271" text-anchor="middle">'+mfgCode+'</text>';
-				barcode += '<text x="150.5" y="77.271" text-anchor="middle">'+prodCode+'</text>';
-				barcode += '<text x="212.5" y="77.271" text-anchor="middle">'+checkDigit+'</text>';
+				barcode += '<text x="7" y="77" text-anchor="middle">'+numSys+'</text>';
+				barcode += '<text x="70" y="77" text-anchor="middle">'+mfgCode+'</text>';
+				barcode += '<text x="150" y="77" text-anchor="middle">'+prodCode+'</text>';
+				barcode += '<text x="214" y="77" text-anchor="middle">'+checkDigit+'</text>';
 				barcode += '</g>';
 				
 				var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
