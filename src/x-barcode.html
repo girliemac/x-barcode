@@ -85,7 +85,7 @@
 					heightShort = 60; // To Do - set w and h for other sizes
 					heightTall = 67;
 								
-				var barcode = '<g style="fill:'+this.color+'">';
+				var barcode = '<svg width="220" height="80"><g style="fill:'+this.color+'">';
 				
 				var x = start;
 				for(var i=0; i<s.length; i++){
@@ -109,14 +109,9 @@
 				barcode += '<text x="70" y="77" text-anchor="middle">'+mfgCode+'</text>';
 				barcode += '<text x="150" y="77" text-anchor="middle">'+prodCode+'</text>';
 				barcode += '<text x="214" y="77" text-anchor="middle">'+checkDigit+'</text>';
-				barcode += '</g>';
+				barcode += '</g></svg>';
 				
-				var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-				svg.setAttribute('width', '220');
-				svg.setAttribute('height', '80');
-				//svg.setAttribute('viewBox', '0 0 220 80');
-				svg.innerHTML = barcode;
-				this.appendChild(svg);
+				this.innerHTML = barcode;
 			}
 		});
 	</script>
