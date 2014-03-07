@@ -1,0 +1,25 @@
+{
+    "name": "x-barcode",
+    "version": "0.1.0",
+    "description": "Web Component wrapper for UPC-A barcode using Polymer.",
+    "authors": [
+        "Tomomi Imura"
+    ],
+    "license": "MIT",
+    "main": "src/x-barcode.html",
+    "keywords": [
+        "web-component",
+        "web-components",
+        "UPC",
+        "barcode"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "platform": "Polymer/platform#~0.2.0",
+        "polymer": "Polymer/polymer#~0.2.0"
+    }
+}

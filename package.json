@@ -1,0 +1,19 @@
+{
+    "name": "x-barcode",
+    "version": "0.1.0",
+    "description": "Web Component wrapper for UPC-A barcode using Polymer.",
+    "author": "Tomomi Imura",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/girliemac/x-barcode"
+    },
+    "bugs": {
+        "url": "https://github.com/girliemac/x-barcode/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-connect": "~0.5.0",
+        "grunt-cli": "~0.1.9"
+    }
+}
