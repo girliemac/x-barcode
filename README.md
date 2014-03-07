@@ -13,8 +13,7 @@ Web Component wrapper for UPC-A (for now) barcode using Polymer.
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+	<script src="bower_components/platform/platform.js"></script>
 	```
 
 2. Import Custom Element:
@@ -29,11 +28,34 @@ Web Component wrapper for UPC-A (for now) barcode using Polymer.
 	<x-barcodet></x-barcode>
 	```
 
+## Setup
+
+In order to run it locally you'll need a basic server setup.
+
+1. Install [NodeJS](http://nodejs.org/download/).
+2. Install [GruntJS](http://gruntjs.com/):
+
+    ```sh
+    $ [sudo] npm install -g grunt-cli
+    ```
+
+3. Install local dependencies:
+
+    ```sh
+    $ npm install
+    ```
+
+4. Run a local server and open `http://localhost:8000`.
+
+    ```sh
+    $ grunt connect
+    ```
+    
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`code`      | *int*                  | `00000000000`               | The first 11 disit of UPC-A code. The last digit (check sum) will be calculated).
+`code`      | *int*                  | `00000000000`               | The first 11 disit of UPC-A code. The last digit (check sum) will be calculated.
 `color`      | *string* 	   | `black`               | Color name or hex
 
 
@@ -47,8 +69,7 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
-* v0.0.1 Feb 19, 2014
-	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
+For detailed changelog, check [Releases](https://github.com/girliemac/x-barcode/releases).
 
 ## License
 
