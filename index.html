@@ -5,14 +5,14 @@
 	<title>&lt;x-barcode&gt;</title>
 
 	<!-- Importing Web Component's Polyfill -->
-	<script src="bower_components/platform/platform.js"></script>
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
 	<!-- Importing Custom Elements -->
 	<link rel="import" href="src/x-barcode.html">
-	
+
 	<style>
 	body {
-	    font-family: "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	    font-family: "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	}
 	x-barcode {
 		margin-bottom: 1em;
@@ -35,22 +35,22 @@
 
 	<h1>&lt;x-barcode&gt;</h1>
 	<p>Web components to create a UPC-A barcode in SVG. Try scan these barcodes and run product search with your mobile phone. It works :-)</p>
-	
+
 	<!-- Using Custom Elements -->
 	<x-barcode code="02310010517"></x-barcode>
-	
+
 	<x-barcode code="85961200100" color="hotpink"></x-barcode>
-	
+
 	<x-barcode code="01657112127" color="olive"></x-barcode>
-	
-	
+
+
 	<pre>
 &lt;x-barcode <span class="na">code=</span><span class="s">"02310010517"</span> <span class="na">color=</span><span class="s">"red"</span>&gt;&lt;/x-barcode&gt;
 	</pre>
-	
+
 	<p>Note: The UPC-A code has to be the first 11 digit. The 12th digit ("Check digit") will be calculated and automatically added.</p>
-	
-	
+
+
 	<a href="https://github.com/girliemac/x-barcode"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
 </body>
