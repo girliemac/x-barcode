@@ -1,6 +1,6 @@
 # &lt;x-barcode&gt;
 
-Web Component wrapper for UPC-A (for now) barcode using Polymer.
+Web Component wrapper for UPC-A (for now) barcode using Polymer 1.x.
 
 > Maintained by [Tomomi Imura](https://github.com/girliemac).
 
@@ -12,21 +12,21 @@ Web Component wrapper for UPC-A (for now) barcode using Polymer.
 
 1. Import Web Components' polyfill:
 
-	```html
-	<script src="bower_components/platform/platform.js"></script>
-	```
+    ```html
+    <script src="bower_components/webcomponentsjs/webcomponentsjs.js"></script>
+    ```
 
 2. Import Custom Element:
 
-	```html
-	<link rel="import" href="src/x-barcode.html">
-	```
+    ```html
+    <link rel="import" href="src/x-barcode.html">
+    ```
 
 3. Start using it!
 
-	```html
-	<x-barcodet></x-barcode>
-	```
+    ```html
+    <x-barcodet></x-barcode>
+    ```
 
 ## Setup
 
@@ -53,10 +53,10 @@ In order to run it locally you'll need a basic server setup.
     
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`code`      | *int*                  | `00000000000`               | The first 11 disit of UPC-A code. The last digit (check sum) will be calculated.
-`color`      | *string* 	   | `black`               | Color name or hex
+Attribute  | Options       | Default             | Description
+---        | ---           | ---                 | ---
+`code`     | *int*         | `00000000000`       | The first 11 disit of UPC-A code. The last digit (check sum) will be calculated.
+`color`    | *string*      | `black`             | Color name or hex.
 
 
 ## Contributing
